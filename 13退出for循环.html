@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i=0;i<=5;i++){
+            if(i===3){
+                continue//退出本次循环，document.write不执行
+            }
+            document.write(i)//01245
+        }
+        document.write("<br>")
+        for(let i=0;i<=5;i++){
+            if(i===3){
+                break//退出整个循环，document.write
+            }
+            document.write(i)//012
+        }
+    </script>
+</body>
+</html>
