@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,6,7,8,9];
+        // 增
+        arr.push(10)
+        //数组末尾添加新的数据方法：将一个或多个元素添加到数组的末尾，并返回该数组的新长度
+        //  console.log(arr.push(10))    返回值是数组的新长度11
+        
+        arr.unshift(100)
+        //数组开头添加新的数据：方法将一个或多个元素添加到数组的开头，并返回该数组的新长度
+       
+        console.log(arr)//[100, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        
+        // 删
+        arr.pop()
+        //删除数组末尾的一个数据：方法从数组中删除最后一个元素，并返回该元素的值
+        // console.log(arr.pop())    返回值是删除的元素10
+       
+        arr.shift()
+        //删除数组开头的一个数据：方法从数组中删除第一个元素，并返回该元素的值
+        // console.log(arr.shift())    返回值是删除的元素100
+        
+        arr.splice(2,1)
+        //删除数组下标为2的一个数据：方法从数组中删除指定索引开始的一个或多个元素，并返回被删除的元素组成的数组
+        // console.log(arr.splice(2,1))    返回值是删除的元素[3]
+        
+        console.log(arr)//[ 1, 2, 4, 5, 6, 7, 8, 9, 10]
+        // 改
+        arr[0] = 10;
+        console.log(arr);//[10, 2, 4, 5, 6, 7, 8, 9, 10]
+        // 查
+        console.log(arr[0]);//10
+    </script>
+</body>
+</html>
