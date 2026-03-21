@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello(){
+            document.write("hello world<br>")
+        }//函数构造
+        sayHello()//函数调用
+        
+        function add(){
+            let a=Number(prompt("请输入第一个数字"))
+            let b=Number(prompt("请输入第二个数字"))
+            return a+b
+        }
+        document.write(add()+"<br>")
+
+        function sum(){
+            let sum=0
+            for(let i=0;i<=100;i++){
+                sum+=i
+            }
+            return sum
+        }
+        document.write(sum()+"<br>")
+
+        function getSum(m,n){
+            let sum=0
+            
+            for(let i=n;i<=m;i++){
+                sum+=i
+            }
+            return sum
+        }
+        document.write(getSum()+"<br>")
+    </script>
+</body>
+</html>
