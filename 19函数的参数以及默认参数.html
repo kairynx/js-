@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function sum(start,end){
+                    //形参  形式上的参数    
+        let sum=0
+            for(let i=start;i<=end;i++){
+                sum+=i
+            }
+            console.log(sum)
+        }
+        sum(15,150)//调用的小括号里 实参   实际的参数
+        function sum2(start,end){
+                    //形参  形式上的参数    
+        let sum=0
+            for(let i=start;i<=end;i++){
+                sum+=i
+            }
+            console.log(sum)
+        }
+        sum2(Number(prompt("请输入一个数字")),Number(prompt("请输入另一个数字")))
+        //用户取消操作或直接确认，返回值为null
+        //用户输入的不是数字，返回值为NaN
+        //Number()函数可以将字符串转换为数字，Number(null)返回0
+
+
+    </script>
+</body>
+</html>
