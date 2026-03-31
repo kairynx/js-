@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = prompt("请输入成绩");
+        console.log(score>=90 ?"优秀格":score>=60?"及格":"不及格");//三元运算符
+        
+        let users = [
+  { name: "Tom", age: 17 },
+  { name: "Jerry", age: 20 },
+  { name: "Lucy", age: 16 }
+]
+        for(let i=0;i<users.length;i++){
+            if (users[i].age>=18) {
+                console.log(users[i].name+"是成年人")
+            }
+            
+        }
+    </script>
+</body>
+</html>

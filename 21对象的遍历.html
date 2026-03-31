@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            name:"张三",
+            age:18,
+            sex:"男"
+        }//键值对   key:value
+        for(let key in obj){
+            console.log("key："+key);
+        }
+        for(let key in obj){
+            console.log("value："+obj[key]);
+        }
+        for(let key in obj){
+            console.log("obj.key:"+obj.key);
+        }
+        let arr=[8,9,4,77,100]
+        for(let k in arr){
+            console.log("k遍历数组的索引:"+(typeof k))//string  字符串类型
+            console.log(arr[k]);
+        }
+        //k在数组中是下标，但对象中是属性名
+    </script>
+</body>
+</html>
