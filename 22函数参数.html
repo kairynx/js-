@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getSum(){
+            console.log(arguments)
+            let s= 0
+            for(let i = 0; i < arguments.length; i++) {
+                s += arguments[i]
+            }
+            console.log(s)
+            }
+        getSum(1,2,3,4,5)
+    </script>
+</body>
+</html>
